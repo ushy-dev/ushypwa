@@ -27,7 +27,7 @@
         {
           "src": "/Gigs.png",
           "type": "image/png",
-          "size": "192x192"
+          "sizes": "192x192"
         }
       ]
     },
@@ -39,7 +39,7 @@
         {
           "src": "/Discover.png",
           "type": "image/png",
-          "size": "192x192"
+          "sizes": "192x192"
         }
       ]
     },
@@ -51,7 +51,7 @@
         {
           "src": "/Messages.png",
           "type": "image/png",
-          "size": "192x192"
+          "sizes": "192x192"
         }
       ]
     },
@@ -63,7 +63,7 @@
         {
           "src": "/Settings.png",
           "type": "image/png",
-          "size": "192x192"
+          "sizes": "192x192"
         }
       ]
     }
