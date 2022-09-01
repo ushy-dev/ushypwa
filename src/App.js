@@ -1,8 +1,19 @@
 import { useState } from "react";
 import "./App.css";
+import BottomNav from "./components/bottomNav/bottomNav";
 import HeaderBar from "./components/headerBar/headerBar";
 import SearchBar from "./components/searchBar/searchBar";
-import { headerBackIcon } from "./Utils/tools";
+import {
+  headerBackIcon,
+  gigIconActive,
+  disCoverNotActive,
+  messageNotActive,
+  settingsNotActive,
+  gigTextActive,
+  discoverTextNotActive,
+  messagesTextNotActive,
+  SettingsTextNotActive,
+} from "./Utils/tools";
 
 function App() {
   const [isitWork, setIsItWork] = useState("");
@@ -17,20 +28,30 @@ function App() {
   };
   return (
     <>
-    <HeaderBar backIcon={headerBackIcon} headerText="My Gigs" />
-    <div className="watcham">
+      <HeaderBar backIcon={headerBackIcon} headerText="My Gigs" />
+      <div className="watcham">
         <SearchBar
-        onSubmit={handleDsubmit}
-        submit="submit"
-        inputType="text"
-        placeholder="Search"
-        value={isitWork}
-        name=""
-        onChange={handleDinput}
-        showSearchWords={isitWork}
+          onSubmit={handleDsubmit}
+          submit="submit"
+          inputType="text"
+          placeholder="Search"
+          value={isitWork}
+          name=""
+          onChange={handleDinput}
+          showSearchWords={isitWork}
+        />
+      </div>
+
+      <BottomNav
+        gigsIcon={gigIconActive}
+        gigsText={gigTextActive}
+        discoverIcon={disCoverNotActive}
+        discoverText={discoverTextNotActive}
+        messageIcon={messageNotActive}
+        messageText={messagesTextNotActive}
+        settingsIcon={settingsNotActive}
+        settingsText={SettingsTextNotActive}
       />
-    </div>
-    
     </>
   );
 }

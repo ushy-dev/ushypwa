@@ -1,0 +1,20 @@
+.bottomnav__cnt {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 0 16px;
+    border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomnav__cnt-item button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}

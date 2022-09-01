@@ -105,3 +105,17 @@ select {
     font-size: 16px;
   }
 }
+
+.text__active {
+  color: #0184FB;
+  font-size: 9.44073px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.text__not-active {
+  color: #9A9FBF;
+  font-size: 9.44073px;
+  font-weight: 700;
+  line-height: 12px;
+}
