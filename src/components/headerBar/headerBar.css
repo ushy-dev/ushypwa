@@ -27,3 +27,7 @@
   letter-spacing: -0.03em;
   cursor: none;
 }
+
+.backIconButton:active {
+    opacity: 0.25;
+}

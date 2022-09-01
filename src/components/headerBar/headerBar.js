@@ -2,21 +2,14 @@ import React from "react";
 import { headerBackIcon, headerNotificationIcon } from "../../Utils/tools";
 import "./headerBar.css";
 
-
-const HeaderBar = ({backIcon, headerText}) => {
-    return (
-        <div className="headerbar-cnt">
-            <button>
-                {backIcon}
-            </button>
-            <p>{headerText}</p>
-            <button>
-                {headerNotificationIcon}
-            </button>
-
-        </div>
-    )
-}
-
+const HeaderBar = ({ backIcon, headerText }) => {
+  return (
+    <div className="headerbar-cnt">
+      <button className="backIconButton">{backIcon}</button>
+      <p>{headerText}</p>
+      <button disabled>{headerNotificationIcon}</button>
+    </div>
+  );
+};
 
 export default HeaderBar;
