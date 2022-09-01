@@ -1,0 +1,29 @@
+.headerbar-cnt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 71px;
+  border-bottom: 1px solid rgba(154, 159, 191, 0.1);
+}
+
+.headerbar-cnt button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.headerbar-cnt p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.2px;
+  text-align: center;
+  color: #000;
+  letter-spacing: -0.03em;
+  cursor: none;
+}
