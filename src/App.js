@@ -1,10 +1,31 @@
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import SearchBar from "./components/searchBar/searchBar";
 
 function App() {
+  const [isitWork, setIsItWork] = useState("");
+  const [showWhat, setShowWhat] = useState("");
+  const handleDinput = (e) => {
+    setIsItWork(e.target.value);
+  };
+
+  const handleDsubmit = (e) => {
+    e.preventDefault();
+    setShowWhat(isitWork);
+  };
   return (
-    <div className="App">
-      <h1>Welcome to Ushy..</h1>
-    </div>
+    <>
+      <SearchBar
+        onSubmit={handleDsubmit}
+        submit="submit"
+        inputType="search"
+        placeholder="Search"
+        value={isitWork}
+        name="search"
+        onChange={handleDinput}
+        showSearchWords={isitWork}
+      />
+    </>
   );
 }
 
