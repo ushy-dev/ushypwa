@@ -21,7 +21,7 @@ function App() {
         inputType="text"
         placeholder="Search"
         value={isitWork}
-        name="search"
+        name=""
         onChange={handleDinput}
         showSearchWords={isitWork}
       />
