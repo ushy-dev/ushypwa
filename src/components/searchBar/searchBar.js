@@ -1,5 +1,6 @@
 import React from "react";
 import "./searchBar.css";
+import GigCard from "../gigCard/gigCard";
 
 const SearchBar = ({
   onSubmit,
@@ -23,8 +24,22 @@ const SearchBar = ({
           className="search"
         ></input>
         <div>
+          <div className="date__cnt">
+            <p>Today</p>
+          </div>
+
           <div>
-            <p>{showSearchWords}</p>
+            {showSearchWords.toLowerCase() === "city" ? (
+              <GigCard
+                category="Awards  Ceremonies"
+                location="Ajah, Lagos"
+                date="06:00AM"
+                fullWorld="City People Awards 2022"
+                searchedHighlight={showSearchWords}
+              />
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </form>

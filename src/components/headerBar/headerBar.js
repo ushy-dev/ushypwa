@@ -1,5 +1,5 @@
 import React from "react";
-import { headerBackIcon, headerNotificationIcon } from "../../Utils/tools";
+import { headerNotificationIcon } from "../../Utils/tools";
 import "./headerBar.css";
 
 const HeaderBar = ({ backIcon, headerText }) => {
