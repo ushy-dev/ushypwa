@@ -18,7 +18,7 @@ function App() {
       <SearchBar
         onSubmit={handleDsubmit}
         submit="submit"
-        inputType="search"
+        inputType="text"
         placeholder="Search"
         value={isitWork}
         name="search"
