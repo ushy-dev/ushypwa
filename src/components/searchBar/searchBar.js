@@ -24,19 +24,20 @@ const SearchBar = ({
           className="search"
         ></input>
         <div>
-          <div className="date__cnt">
-            <p>Today</p>
-          </div>
-
           <div>
             {showSearchWords.toLowerCase() === "city" ? (
-              <GigCard
-                category="Awards  Ceremonies"
-                location="Ajah, Lagos"
-                date="06:00AM"
-                fullWorld="City People Awards 2022"
-                searchedHighlight={showSearchWords}
-              />
+              <>
+                <div className="date__cnt">
+                  <p>Today</p>
+                </div>
+                <GigCard
+                  category="Awards  Ceremonies"
+                  location="Ajah, Lagos"
+                  date="06:00AM"
+                  fullWorld="City People Awards 2022"
+                  searchedHighlight={showSearchWords}
+                />
+              </>
             ) : (
               <div></div>
             )}
