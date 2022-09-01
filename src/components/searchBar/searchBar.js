@@ -25,7 +25,7 @@ const SearchBar = ({
         ></input>
         <div>
           <div>
-            {showSearchWords.toLowerCase() === "city" ? (
+            {showSearchWords ? (
               <>
                 <div className="date__cnt">
                   <p>Today</p>
