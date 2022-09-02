@@ -11,11 +11,13 @@ const GigCard = ({
   handlemoreClick,
   searchedHighlight,
   fullWorld,
+  handleClick
+
 }) => {
   const parts = fullWorld.split(new RegExp(`(${searchedHighlight})`, "gi"));
   return (
     <>
-      <div className="gigCard_cnt">
+      <div className="gigCard_cnt" onClick={handleClick}>
         <div className="gigCard_cnt-left">
           <p className="gigCard_cnt-category">{category}</p>
           <p>

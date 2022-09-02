@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./searchBar.css";
 import GigCard from "../gigCard/gigCard";
 
@@ -12,6 +13,11 @@ const SearchBar = ({
   onChange,
   showSearchWords,
 }) => {
+  let navigate = useNavigate();
+
+  const handleDetailClick = () => {
+    navigate("/gigs-details");
+  };
   return (
     <>
       <form className="search__form" onSubmit={onSubmit}>
@@ -31,6 +37,7 @@ const SearchBar = ({
                   <p>Today</p>
                 </div>
                 <GigCard
+                  handleClick={handleDetailClick}
                   category="Awards  Ceremonies"
                   location="Ajah, Lagos"
                   date="06:00AM"
