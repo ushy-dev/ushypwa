@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
 import {
-    arrowdownbutton,
+  arrowdownbutton,
   disCoverNotActive,
   discoverTextNotActive,
   gigIconActive,
@@ -15,7 +15,7 @@ import {
   settingsNotActive,
   SettingsTextNotActive,
 } from "../../Utils/tools";
-import "./gigsDetails.css"
+import "./gigsDetails.css";
 
 const GigsDetails = () => {
   let navigate = useNavigate();
@@ -31,19 +31,105 @@ const GigsDetails = () => {
       />
       <div className="gigs_details_cnt">
         <div className="gigs_details_cnt-residency">
-            <p>For Lagos residents only</p>
+          <p>For Lagos residents only</p>
         </div>
         <div className="gigs_details_cnt-title">
-            <p>AWA-001-030622</p>
-            <div>
-                {moreIcon}
-            </div>
+          <p>AWA-001-030622</p>
+          <div>{moreIcon}</div>
         </div>
         <div className="gigs_details_cnt-overview">
-            <p>Overview</p>
-            <div>
-                {arrowdownbutton}
+          <p>Overview</p>
+          <div>{arrowdownbutton}</div>
+        </div>
+        <div className="gigs_details_cnt-itembody">
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p>You will be paid</p>
             </div>
+            <div className="gigs_details_cnt-itemright">
+              <p>₦15,000.00</p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
+              <p></p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p></p>
+            </div>
+          </div>
         </div>
       </div>
       <BottomNav
