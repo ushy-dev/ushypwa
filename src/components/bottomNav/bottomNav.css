@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.bottomnav__cnt-item button {
+    font-family: inherit;
+}
+
 
 
 

@@ -111,6 +111,7 @@ select {
   font-weight: 700;
   line-height: 12px;
   letter-spacing: -.05em;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
 .text__not-active {
@@ -119,4 +120,5 @@ select {
   font-weight: 700;
   line-height: 12px;
   letter-spacing: -.05em;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
