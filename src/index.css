@@ -114,7 +114,7 @@ select {
 }
 
 .text__not-active {
-  color: #9A9FBF;
+ color: rgba(154, 159, 191, 0.25);
   font-size: 9.44073px;
   font-weight: 700;
   line-height: 12px;
