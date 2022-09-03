@@ -8,9 +8,10 @@
   border-top: 0.944073px solid rgba(154, 159, 191, 0.15);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 70px;
+  height: 90px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1.5rem;
 }
 
 .bottomnav__cnt-item {
