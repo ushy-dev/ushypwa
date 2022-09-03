@@ -111,6 +111,7 @@ select {
   font-size: 9.44073px;
   font-weight: 700;
   line-height: 12px;
+  letter-spacing: -.01em;
 }
 
 .text__not-active {
@@ -118,4 +119,5 @@ select {
   font-size: 9.44073px;
   font-weight: 700;
   line-height: 12px;
+  letter-spacing: -.01em;
 }
