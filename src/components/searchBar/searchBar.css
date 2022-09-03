@@ -24,8 +24,34 @@
   border: 1px solid #9a9fbf25;
 }
 
-input.search:focus::placeholder {
+/* input.search:focus::placeholder {
   color: transparent;
+} */
+
+input.search::placeholder {
+  color: #9a9fbf50;
+  opacity: 1;
+}
+
+input.search::-ms-input-placeholder {
+  color: #9a9fbf50;
+}
+
+input.search::-ms-input-placeholder {
+  color: #9a9fbf50;
+}
+
+input.search:focus-visible::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+input.search:focus-visible::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+input.search:focus-visible::-ms-input-placeholder {
+  color: #ffffff;
 }
 
 input.search:focus-visible {
@@ -51,6 +77,6 @@ input.search:focus-visible {
   font-weight: 600;
   font-size: 11px;
   line-height: 14px;
-  color: #0184FB;
+  color: #0184fb;
   margin-left: 16px;
 }
