@@ -1,6 +1,6 @@
 .adscard__container {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 300px);
   width: 100%;
   overflow-x: scroll;
   padding: 0 16px;
