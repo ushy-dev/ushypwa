@@ -11,6 +11,7 @@ const Ads = () => {
     <>
       <TitleCard name="Ads" />
       <AdsCard />
+      <TitleCard name="Today" />
     </>
   );
 };

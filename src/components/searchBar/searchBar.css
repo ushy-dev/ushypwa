@@ -11,7 +11,8 @@
 
   border-radius: 8px;
   border-style: none;
-  margin: 12px 16px;
+  margin: 0 16px;
+  margin-top: 12px;
   padding: 16px 12px;
   padding-left: 34px;
   font-size: 14px;
