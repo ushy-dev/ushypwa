@@ -1,7 +1,9 @@
 import { useState } from "react";
+import Ads from "../../components/ads/ads";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
 import SearchBar from "../../components/searchBar/searchBar";
+import TitleCard from "../../components/titleCard/titleCard";
 import {
   headerBackIcon,
   gigIconActive,
@@ -41,6 +43,8 @@ function Homepage() {
           showSearchWords={isitWork}
         />
       </div>
+      
+      <Ads />
 
       <BottomNav
         gigsIcon={gigIconActive}

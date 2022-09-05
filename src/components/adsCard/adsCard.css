@@ -1,0 +1,43 @@
+.adscard__container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.adscard__container::-webkit-scrollbar {
+  display: none;
+}
+
+.adsCard-item {
+  height: 75px;
+  border-radius: 4.35976px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adsCard-item p {
+  font-size: 19.25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.ads_a {
+  background-color: #a3dae7;
+}
+
+.ads_b {
+  background-color: #b9e7a3;
+}
+
+.ads_c {
+  background-color: #e7a3a7;
+}
