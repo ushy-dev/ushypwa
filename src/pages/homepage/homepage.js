@@ -2,6 +2,7 @@ import { useState } from "react";
 import Ads from "../../components/ads/ads";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
+import JobCard from "../../components/jobCard/jobCard";
 import SearchBar from "../../components/searchBar/searchBar";
 import TitleCard from "../../components/titleCard/titleCard";
 import {
@@ -43,9 +44,30 @@ function Homepage() {
           showSearchWords={isitWork}
         />
       </div>
-      
-      <Ads />
 
+      <Ads />
+      <TitleCard name="Today" />
+      <JobCard
+        category="Concert"
+        title="BurnaBoy: Live @ the 02"
+        location="Victoria Island, Lagos"
+        date="06:00AM"
+        progresss="70"
+        bottomText="Anyone can apply"
+        bottomTextThemeColor="#27AE5F13"
+        bottomTextColor="#27AE60"
+      />
+      <JobCard
+        category="Wedding"
+        title="AW01030722"
+        location="Ikorodu, Lagos"
+        date="06:00AM"
+        progresss={80}
+        bottomText="Must be 5'11 and above"
+        bottomTextThemeColor="#9B51E011"
+        bottomTextColor="
+        #9B51E0"
+      />
       <BottomNav
         gigsIcon={gigIconActive}
         gigsText={gigTextActive}
