@@ -32,42 +32,45 @@ function Homepage() {
   return (
     <>
       <HeaderBar backIcon={headerBackIcon} headerText="My Gigs" />
-      <div className="watcham">
-        <SearchBar
-          onSubmit={handleDsubmit}
-          submit="submit"
-          inputType="text"
-          placeholder="Search"
-          value={isitWork}
-          name=""
-          onChange={handleDinput}
-          showSearchWords={isitWork}
+      <div className="homepage__body">
+        <div className="watcham">
+          <SearchBar
+            onSubmit={handleDsubmit}
+            submit="submit"
+            inputType="text"
+            placeholder="Search"
+            value={isitWork}
+            name=""
+            onChange={handleDinput}
+            showSearchWords={isitWork}
+          />
+        </div>
+
+        <Ads />
+        <TitleCard name="Today" />
+        <JobCard
+          category="Concert"
+          title="BurnaBoy: Live @ the 02"
+          location="Victoria Island, Lagos"
+          date="06:00AM"
+          progresss="70"
+          bottomText="Anyone can apply"
+          bottomTextThemeColor="#27AE5F13"
+          bottomTextColor="#27AE60"
+        />
+        <JobCard
+          category="Wedding"
+          title="AW01030722"
+          location="Ikorodu, Lagos"
+          date="06:00AM"
+          progresss={80}
+          bottomText="Must be 5'11 and above"
+          bottomTextThemeColor="#9B51E011"
+          bottomTextColor="
+        #9B51E0"
         />
       </div>
 
-      <Ads />
-      <TitleCard name="Today" />
-      <JobCard
-        category="Concert"
-        title="BurnaBoy: Live @ the 02"
-        location="Victoria Island, Lagos"
-        date="06:00AM"
-        progresss="70"
-        bottomText="Anyone can apply"
-        bottomTextThemeColor="#27AE5F13"
-        bottomTextColor="#27AE60"
-      />
-      <JobCard
-        category="Wedding"
-        title="AW01030722"
-        location="Ikorodu, Lagos"
-        date="06:00AM"
-        progresss={80}
-        bottomText="Must be 5'11 and above"
-        bottomTextThemeColor="#9B51E011"
-        bottomTextColor="
-        #9B51E0"
-      />
       <BottomNav
         gigsIcon={gigIconActive}
         gigsText={gigTextActive}
