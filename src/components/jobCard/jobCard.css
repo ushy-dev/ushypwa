@@ -54,13 +54,13 @@
   letter-spacing: -0.03em;
   color: #000000;
   word-wrap: break-word;
+  
 }
 
 .jobcard__divide {
-  margin-top: .5rem;
   display: flex;
   width: 100%;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -71,7 +71,7 @@
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #0184fb;
-  word-wrap: break-word;
+  word-wrap: break-word;margin-top: .5rem;
 }
 
 .jobcard__date {

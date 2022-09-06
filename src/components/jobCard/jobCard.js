@@ -29,10 +29,9 @@ const JobCard = ({
           </div>
           <div className="jobcard__right">
             <div>
-              <p className="jobcard__title">{title}</p>
-
               <div className="jobcard__divide">
                 <div className="jobcard__locationimg">
+                  <p className="jobcard__title">{title}</p>
                   <p className="jobcard__location">{location}</p>
                   <p className="jobcard__date">{date}</p>
                 </div>
