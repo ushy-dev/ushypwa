@@ -33,9 +33,6 @@ const SearchBar = ({
           <div>
             {showSearchWords ? (
               <>
-                <div className="date__cnt">
-                  <p>Today</p>
-                </div>
                 <GigCard
                   handleClick={handleDetailClick}
                   category="Awards  Ceremonies"
