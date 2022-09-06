@@ -8,7 +8,7 @@ const ProgressBar = (props) => {
   let dsd = `calc(${progress} * 31.4 / 100) 31.4`;
 
   return (
-    <div className="progress__container" style={{borderColor: `${circleTwoStroke}`, borderWidth: "2px", borderStyle: "solid"}}>
+    <div className="progress__container" style={{borderColor: "#0184fb", borderWidth: "2px", borderStyle: "solid"}}>
       <svg height="10" width="10" viewBox="0 0 20 20">
         <circle r="10" cx="10" cy="10" fill="white" />
         <circle
@@ -16,7 +16,7 @@ const ProgressBar = (props) => {
           cx="10"
           cy="10"
           fill="transparent"
-          stroke={circleTwoStroke}
+          stroke="#0184fb"
           stroke-width="10"
           stroke-dasharray={dsd}
           transform="rotate(-90) translate(-20)"
