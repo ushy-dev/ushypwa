@@ -4,6 +4,7 @@ import "./progressBar.css";
 
 const ProgressBar = (props) => {
   const [offset, setOffset] = useState(0);
+
   const circleRef = useRef(null);
   const { size, progress, strokeWidth, circleOneStroke, circleTwoStroke } =
     props;
@@ -11,6 +12,8 @@ const ProgressBar = (props) => {
   const center = size / 2;
   const radius = size / 2 - strokeWidth / 2;
   const circumference = 2 * Math.PI * radius;
+
+ 
 
   useEffect(() => {
     const progressOffset = ((100 - progress) / 100) * circumference;
@@ -39,7 +42,6 @@ const ProgressBar = (props) => {
           strokeDasharray={circumference}
           strokeDashoffset={offset}
         />
-        
       </svg>
     </>
   );

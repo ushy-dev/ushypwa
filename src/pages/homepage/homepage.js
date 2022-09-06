@@ -53,7 +53,7 @@ function Homepage() {
           title="BurnaBoy: Live @ the 02"
           location="Victoria Island, Lagos"
           date="06:00AM"
-          progresss={40}
+          progresss={30}
           bottomText="Anyone can apply"
           bottomTextThemeColor="#27AE5F13"
           bottomTextColor="#27AE60"
@@ -82,8 +82,24 @@ function Homepage() {
         settingsIcon={settingsNotActive}
         settingsText={SettingsTextNotActive}
       />
+      
+      {/* <svg height="15" width="15" viewBox="0 0 20 20">
+        <circle r="10" cx="10" cy="10" fill="white" />
+        <circle
+          r="5"
+          cx="10"
+          cy="10"
+          fill="transparent"
+          stroke="tomato"
+          stroke-width="10"
+          stroke-dasharray="calc(30 * 31.4 / 100) 31.4"
+          transform="rotate(-90) translate(-20)"
+        />
+      </svg> */}
     </>
   );
 }
 
 export default Homepage;
+
+
