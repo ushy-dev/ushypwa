@@ -58,6 +58,7 @@ function Homepage() {
           bottomTextThemeColor="#27AE5F13"
           bottomTextColor="#27AE60"
         />
+        <TitleCard name="Tomorrow" />
         <JobCard
           category="Wedding"
           title="AW01030722"
