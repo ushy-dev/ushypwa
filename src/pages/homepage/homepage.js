@@ -35,7 +35,7 @@ function Homepage() {
   };
   return (
     <>
-      <HeaderBar backIcon={headerBackIcon} headerText="My Gigs" />
+      <HeaderBar backIcon="" headerText="My Gigs" />
       <div className="homepage__body">
         <div className="watcham">
           <SearchBar
@@ -54,7 +54,7 @@ function Homepage() {
         <TitleCard name="Today" />
         <JobCard
           category="Concert"
-          title="Burna Boy: Live @ the 02"
+          title="Burna Boy: Live @ the o2"
           location="Victoria Island, Lagos"
           date="06:00AM"
           progresss={50}
@@ -70,7 +70,7 @@ function Homepage() {
           title="WE01030722"
           location="Ago-Iwoye, Ogun"
           date="4:00PM"
-          progresss={30}
+          progresss={25}
           bottomText="Must be 5'11 and above"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
@@ -84,7 +84,7 @@ function Homepage() {
           title="AC03110722"
           location="Ikorodu, Lagos"
           date="08:00AM"
-          progresss={30}
+          progresss={25}
           bottomText="Size 8-10. Do not apply if you've worked with an agency in Lagos"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
@@ -97,7 +97,7 @@ function Homepage() {
           title="#FinallyFeyMos"
           location="Lekki-Epe, Lagos"
           date="06:00AM"
-          progresss={30}
+          progresss={25}
           bottomText="Lagos Residents only"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="

@@ -1,7 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./searchBar.css";
-import GigCard from "../gigCard/gigCard";
+// import GigCard from "../gigCard/gigCard";
 
 const SearchBar = ({
   onSubmit,
@@ -11,13 +11,12 @@ const SearchBar = ({
   value,
   name,
   onChange,
-  showSearchWords,
 }) => {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
-  const handleDetailClick = () => {
-    navigate("/gigs-details");
-  };
+  // const handleDetailClick = () => {
+  //   navigate("/gigs-details");
+  // };
   return (
     <>
       <form className="search__form" onSubmit={onSubmit}>
@@ -30,7 +29,7 @@ const SearchBar = ({
           className="search"
         ></input>
         <div>
-          <div>
+          {/* <div>
             {showSearchWords ? (
               <>
                 <GigCard
@@ -45,7 +44,7 @@ const SearchBar = ({
             ) : (
               <div></div>
             )}
-          </div>
+          </div> */}
         </div>
       </form>
     </>

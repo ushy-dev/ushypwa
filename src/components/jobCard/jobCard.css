@@ -11,21 +11,24 @@
 
 .jobcard__top {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .jobcard__left {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
-  padding: 16px;
+  padding: 16px 16px 0px 16px;
 }
 
 .jobcard__right {
-  padding: 16px;
+  width: 100%;
+  padding: 0px 16px 16px 16px;
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;

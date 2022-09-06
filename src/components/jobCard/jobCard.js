@@ -13,7 +13,7 @@ const JobCard = ({
   bottomText,
   bottomTextColor,
   bottomTextThemeColor,
-  imagewidth
+  imagewidth,
 }) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--productvalue", progresss);
@@ -25,23 +25,30 @@ const JobCard = ({
         <div className="jobcard__top">
           <div className="jobcard__left">
             <p className="jobcard__category">{category}</p>
-            <p className="jobcard__title">{title}</p>
-            <p className="jobcard__location">{location}</p>
-            <p className="jobcard__date">{date}</p>
+            <button className="jobcard__more">{moreIcon}</button>
           </div>
           <div className="jobcard__right">
-            <button className="jobcard__more">{moreIcon}</button>
+            <div>
+               <p className="jobcard__title">{title}</p>
+            <p className="jobcard__location">{location}</p>
+            <p className="jobcard__date">{date}</p>
+            </div>
+           
+
             <div className="jobcard__right-images">
-              <img style={{width: `${imagewidth}`}} src={images} alt="" />
+              <img style={{ width: `${imagewidth}` }} src={images} alt="" />
             </div>
           </div>
         </div>
-        <div className="jobcard__bottom" style={{background: `linear-gradient(90deg, ${bottomTextThemeColor} 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF`}}>
+        <div
+          className="jobcard__bottom"
+          style={{
+            background: `linear-gradient(90deg, ${bottomTextThemeColor} 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF`,
+          }}
+        >
           <p
             className="jobcard__bottom-left"
             style={{ color: `${bottomTextColor}` }}
-
-            
           >
             {bottomText}
           </p>
