@@ -1,49 +1,28 @@
-import React, { useEffect, useState, useRef } from "react";
+import React  from "react";
 import PropTypes from "prop-types";
 import "./progressBar.css";
 
 const ProgressBar = (props) => {
-  const [offset, setOffset] = useState(0);
+  const { progress, circleTwoStroke } = props;
 
-  const circleRef = useRef(null);
-  const { size, progress, strokeWidth, circleOneStroke, circleTwoStroke } =
-    props;
+  let dsd = `calc(${progress} * 31.4 / 100) 31.4`;
 
-  const center = size / 2;
-  const radius = size / 2 - strokeWidth / 2;
-  const circumference = 2 * Math.PI * radius;
-
- 
-
-  useEffect(() => {
-    const progressOffset = ((100 - progress) / 100) * circumference;
-    setOffset(progressOffset);
-    circleRef.current.style = "transition: stroke-dashoffset 850ms ease-in-out";
-  }, [setOffset, progress, circumference, offset]);
   return (
-    <>
-      <svg className="svg" width={size} height={size}>
+    <div className="progress__container" style={{borderColor: `${circleTwoStroke}`, borderWidth: "2px", borderStyle: "solid"}}>
+      <svg height="10" width="10" viewBox="0 0 20 20">
+        <circle r="10" cx="10" cy="10" fill="white" />
         <circle
-          className="svg-circle-bg"
-          stroke={circleOneStroke}
-          cx={center}
-          cy={center}
-          r={radius}
-          strokeWidth={strokeWidth}
-        />
-        <circle
-          className="svg-circle"
-          ref={circleRef}
+          r="5"
+          cx="10"
+          cy="10"
+          fill="transparent"
           stroke={circleTwoStroke}
-          cx={center}
-          cy={center}
-          r={radius}
-          strokeWidth={strokeWidth}
-          strokeDasharray={circumference}
-          strokeDashoffset={offset}
+          stroke-width="10"
+          stroke-dasharray={dsd}
+          transform="rotate(-90) translate(-20)"
         />
       </svg>
-    </>
+    </div>
   );
 };
 

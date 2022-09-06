@@ -56,9 +56,6 @@ const JobCard = ({
           <div className="jobcard__progressbottom">
             <ProgressBar
               progress={progresss}
-              size={15}
-              strokeWidth={3}
-              circleOneStroke="#fff"
               circleTwoStroke={bottomTextColor}
             />
           </div>

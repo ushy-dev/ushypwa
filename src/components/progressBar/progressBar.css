@@ -6,3 +6,11 @@
   fill: none;
 }
 
+.progress__container {
+    height: 18px;
+    width: 18px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
