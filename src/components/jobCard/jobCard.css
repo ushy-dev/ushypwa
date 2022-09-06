@@ -18,7 +18,7 @@
 .jobcard__left {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 16px;
   width: 203px;
 }
@@ -35,10 +35,10 @@
 .jobcard__category {
   font-style: normal;
   font-weight: 600;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
   line-height: 13px;
   font-size: 10px;
-  color: #9A9FBF;
+  color: #9a9fbf;
 }
 
 .jobcard__title {
@@ -46,7 +46,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
   color: #000000;
 }
 
@@ -55,16 +55,17 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -.24px; color: #0184FB;
+  letter-spacing: -0.24px;
+  color: #0184fb;
 }
 
 .jobcard__date {
-  color: #9A9FBF;
+  color: #9a9fbf;
   font-style: normal;
   font-size: 12px;
   line-height: 15px;
   font-weight: 600;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
 
 .jobcard__bottom {
@@ -73,7 +74,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
- 
+  border-radius: 0px 0px 6px 6px;
 }
 
 .jobcard__bottom-left {
@@ -81,5 +82,5 @@
   font-weight: 700;
   font-size: 10px;
   line-height: 13px;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
