@@ -1,12 +1,12 @@
 .adscard__container {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 249px);
   width: 100%;
   overflow-x: scroll;
   padding: 0 16px;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  gap: 16px;
+  gap: 10px;
   margin-top: 0.8rem;
 }
 .adscard__container::-webkit-scrollbar {
@@ -14,7 +14,8 @@
 }
 
 .adsCard-item {
-  height: 85px;
+  height: 64px;
+  width: 249px;
   border-radius: 4.35976px;
   display: flex;
   align-items: center;
