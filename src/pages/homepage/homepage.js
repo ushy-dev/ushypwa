@@ -53,7 +53,7 @@ function Homepage() {
           title="BurnaBoy: Live @ the 02"
           location="Victoria Island, Lagos"
           date="06:00AM"
-          progresss="70"
+          progresss={40}
           bottomText="Anyone can apply"
           bottomTextThemeColor="#27AE5F13"
           bottomTextColor="#27AE60"
