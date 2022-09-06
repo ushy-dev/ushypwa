@@ -29,8 +29,6 @@ function Homepage() {
     setIsItWork(e.target.value);
   };
 
-
-
   const handleDsubmit = (e) => {
     e.preventDefault();
     setShowWhat(isitWork);
@@ -77,8 +75,8 @@ function Homepage() {
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
         #9B51E0"
-        images={usher1}
-        imagewidth="120px"
+          images={usher1}
+          imagewidth="120px"
         />
         <TitleCard name="Next Week" />
         <JobCard
@@ -91,21 +89,21 @@ function Homepage() {
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
         #9B51E0"
-        images={ushers}
-        imagewidth="70px"
+          images={ushers}
+          imagewidth="70px"
         />
-         <JobCard
+        <JobCard
           category="Wedding"
           title="#FinallyFeyMos"
           location="Lekki-Epe, Lagos"
           date="06:00AM"
           progresss={30}
-          bottomText="Must be 5'11 and above"
+          bottomText="Lagos Residents only"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
         #9B51E0"
-        images={usher1}
-        imagewidth="120px"
+          images={usher1}
+          imagewidth="120px"
         />
       </div>
 
@@ -119,12 +117,8 @@ function Homepage() {
         settingsIcon={settingsNotActive}
         settingsText={SettingsTextNotActive}
       />
-      
-      
     </>
   );
 }
 
 export default Homepage;
-
-
