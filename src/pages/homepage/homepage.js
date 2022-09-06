@@ -52,7 +52,7 @@ function Homepage() {
         <TitleCard name="Today" />
         <JobCard
           category="Concert"
-          title="BurnaBoy: Live @ the 02"
+          title="Burna Boy: Live @ the 02"
           location="Victoria Island, Lagos"
           date="06:00AM"
           progresss={50}
