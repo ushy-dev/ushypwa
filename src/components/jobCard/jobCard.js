@@ -50,6 +50,8 @@ const JobCard = ({
           <p
             className="jobcard__bottom-left"
             style={{ color: `${bottomTextColor}` }}
+
+            
           >
             {bottomText}
           </p>
