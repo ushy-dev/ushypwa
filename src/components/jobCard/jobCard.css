@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 16px;
 }
 
 .jobcard__left {
@@ -22,13 +23,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 16px 16px 0px 16px;
 }
 
 .jobcard__right {
   width: 100%;
-  padding: 0px 16px 16px 16px;
-  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   gap: 1.5rem;
@@ -58,6 +56,14 @@
   word-wrap: break-word;
 }
 
+.jobcard__divide {
+  margin-top: .5rem;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .jobcard__location {
   font-style: normal;
   font-weight: 600;
@@ -75,6 +81,7 @@
   line-height: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
+  margin-top: .5rem;
 }
 
 .jobcard__bottom {
