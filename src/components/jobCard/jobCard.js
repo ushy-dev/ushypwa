@@ -59,7 +59,7 @@ const JobCard = ({
               size={15}
               strokeWidth={3}
               circleOneStroke="#fff"
-              circleTwoStroke="#0184fb"
+              circleTwoStroke={bottomTextColor}
             />
           </div>
         </div>
