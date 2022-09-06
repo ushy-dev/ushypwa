@@ -18,6 +18,10 @@ import {
 } from "../../Utils/tools";
 import "./homepage.css";
 
+import usher1 from "../../assets/images/Ushers-1.png";
+import usher2 from "../../assets/images/Ushers-2.png";
+import ushers from "../../assets/images/Ushers.png";
+
 function Homepage() {
   const [isitWork, setIsItWork] = useState("");
   const [, setShowWhat] = useState("");
@@ -59,18 +63,49 @@ function Homepage() {
           bottomText="Anyone can apply"
           bottomTextThemeColor="#27AE5F13"
           bottomTextColor="#27AE60"
+          images={usher2}
+          imagewidth="120px"
         />
         <TitleCard name="Tomorrow" />
         <JobCard
           category="Wedding"
-          title="AW01030722"
+          title="WE01030722"
+          location="Ago-Iwoye, Ogun"
+          date="4:00PM"
+          progresss={30}
+          bottomText="Must be 5'11 and above"
+          bottomTextThemeColor="#9B51E011"
+          bottomTextColor="
+        #9B51E0"
+        images={usher1}
+        imagewidth="120px"
+        />
+        <TitleCard name="Next Week" />
+        <JobCard
+          category="Awards & Ceremonies"
+          title="AC03110722"
           location="Ikorodu, Lagos"
+          date="08:00AM"
+          progresss={30}
+          bottomText="Size 8-10. Do not apply if you've worked with an agency in Lagos"
+          bottomTextThemeColor="#9B51E011"
+          bottomTextColor="
+        #9B51E0"
+        images={ushers}
+        imagewidth="70px"
+        />
+         <JobCard
+          category="Wedding"
+          title="#FinallyFeyMos"
+          location="Lekki-Epe, Lagos"
           date="06:00AM"
           progresss={30}
           bottomText="Must be 5'11 and above"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
         #9B51E0"
+        images={usher1}
+        imagewidth="120px"
         />
       </div>
 

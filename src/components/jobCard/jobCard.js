@@ -9,10 +9,11 @@ const JobCard = ({
   location,
   date,
   progresss,
-  // images,
+  images,
   bottomText,
   bottomTextColor,
   bottomTextThemeColor,
+  imagewidth
 }) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--productvalue", progresss);
@@ -30,20 +31,9 @@ const JobCard = ({
           </div>
           <div className="jobcard__right">
             <button className="jobcard__more">{moreIcon}</button>
-            {/* <div className="jobcard__right-images">
-              <img src={images[0]} alt="" />
-              <img src={images[1]} alt="" />
-              <img src={images[2]} alt="" />
-              <div className="jobcard__image-withnumber">
-                <div
-                  className="jobcard__image-withbackground"
-                  style={{
-                    backgroundImage: `linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(${images[3]})`,
-                  }}
-                />
-                <p className="jobcard__image-number">+5</p>
-              </div>
-            </div> */}
+            <div className="jobcard__right-images">
+              <img style={{width: `${imagewidth}`}} src={images} alt="" />
+            </div>
           </div>
         </div>
         <div className="jobcard__bottom" style={{background: `linear-gradient(90deg, ${bottomTextThemeColor} 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF`}}>
