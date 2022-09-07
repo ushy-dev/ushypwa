@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import Ads from "../../components/ads/ads";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
@@ -6,7 +7,7 @@ import JobCard from "../../components/jobCard/jobCard";
 import SearchBar from "../../components/searchBar/searchBar";
 import TitleCard from "../../components/titleCard/titleCard";
 import {
-  headerBackIcon,
+  emptybackIcon,
   gigIconActive,
   disCoverNotActive,
   messageNotActive,
@@ -23,6 +24,7 @@ import usher2 from "../../assets/images/Ushers-2.png";
 import ushers from "../../assets/images/Ushers.png";
 
 function Homepage() {
+  let navigate = useNavigate();
   const [isitWork, setIsItWork] = useState("");
   const [, setShowWhat] = useState("");
   const handleDinput = (e) => {
@@ -33,18 +35,26 @@ function Homepage() {
     e.preventDefault();
     setShowWhat(isitWork);
   };
+
+  const handleClick = () => {
+    navigate("/search");
+  };
+
   return (
     <>
-      <HeaderBar backIcon="" headerText="My Gigs" />
+      <HeaderBar backIcon={emptybackIcon} headerText="My Gigs" />
       <div className="homepage__body">
         <div className="watcham">
           <SearchBar
+            handleClick={handleClick}
             onSubmit={handleDsubmit}
             submit="submit"
             inputType="text"
             placeholder="Search"
             value={isitWork}
             name=""
+            inputtFocus={false}
+            inputDisabled={false}
             onChange={handleDinput}
             showSearchWords={isitWork}
           />

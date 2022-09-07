@@ -15,6 +15,10 @@ export const headerNotificationIcon = (
   </svg>
 );
 
+export const emptybackIcon = (
+  <div style={{ width: "30px", height: "30px" }}></div>
+);
+
 export const headerBackIcon = (
   <svg
     width="30"

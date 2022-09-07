@@ -11,6 +11,9 @@ const SearchBar = ({
   value,
   name,
   onChange,
+  inputtFocus,
+  inputDisabled,
+  handleClick
 }) => {
   // let navigate = useNavigate();
 
@@ -19,7 +22,7 @@ const SearchBar = ({
   // };
   return (
     <>
-      <form className="search__form" onSubmit={onSubmit}>
+      <form className="search__form" onClick={handleClick} onSubmit={onSubmit}>
         <input
           type={inputType}
           placeholder={placeholder}
@@ -27,6 +30,8 @@ const SearchBar = ({
           name={name}
           onChange={onChange}
           className="search"
+          disabled={inputDisabled}
+          autoFocus={inputtFocus}
         ></input>
         <div>
           {/* <div>
