@@ -35,7 +35,7 @@
 .jobcard__more {
   background-color: transparent;
   border: none;
-  opacity: .15;
+  opacity: 0.15;
 }
 
 .jobcard__category {
@@ -55,7 +55,6 @@
   letter-spacing: -0.03em;
   color: #000000;
   word-wrap: break-word;
-  
 }
 
 .jobcard__divide {
@@ -72,7 +71,8 @@
   line-height: 18px;
   letter-spacing: -0.24px;
   color: #0184fb;
-  word-wrap: break-word;margin-top: .5rem;
+  word-wrap: break-word;
+  margin-top: 0.5rem;
 }
 
 .jobcard__date {
@@ -82,7 +82,7 @@
   line-height: 15px;
   font-weight: 600;
   letter-spacing: -0.03em;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .jobcard__bottom {
