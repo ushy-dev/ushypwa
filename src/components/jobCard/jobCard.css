@@ -35,6 +35,7 @@
 .jobcard__more {
   background-color: transparent;
   border: none;
+  opacity: .15;
 }
 
 .jobcard__category {
