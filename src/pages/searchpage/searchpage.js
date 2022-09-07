@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HeaderBar from "../../components/headerBar/headerBar";
 import SearchBar from "../../components/searchBar/searchBar";
@@ -21,6 +21,12 @@ const SearchPage = () => {
   const [searchwords, setSearchWords] = useState("");
   const [showError, setShowError] = useState(false);
   let navigate = useNavigate();
+
+  useEffect(() => {
+    if (searchwords === "") {
+      setShowError(false);
+    }
+  }, [searchwords]);
 
   const handleDinput = (e) => {
     setSearchWords(e.target.value);
