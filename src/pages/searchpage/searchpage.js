@@ -1,13 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import HeaderBar from "../../components/headerBar/headerBar";
 import SearchBar from "../../components/searchBar/searchBar";
-import { emptybackIcon } from "../../Utils/tools";
+import { headerBackIcon } from "../../Utils/tools";
 
 
 const SearchPage = () => {
+    let navigate = useNavigate();
+    const handleGoBack = () => {
+        navigate(-1);
+    }
   return (
     <>
-      <HeaderBar backIcon={emptybackIcon} headerText="My Gigs" />
+      <HeaderBar handleClick={handleGoBack} backIcon={headerBackIcon} headerText="My Gigs" />
       <div className="watcham">
         <SearchBar
             submit="submit"
