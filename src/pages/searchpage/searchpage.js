@@ -1,26 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HeaderBar from "../../components/headerBar/headerBar";
 import SearchBar from "../../components/searchBar/searchBar";
-import { headerBackIcon } from "../../Utils/tools";
-
+import {
+  disCoverNotActive,
+  discoverTextNotActive,
+  gigIconActive,
+  gigTextActive,
+  headerBackIcon,
+  messageNotActive,
+  messagesTextNotActive,
+  settingsNotActive,
+  SettingsTextNotActive,
+} from "../../Utils/tools";
+import nosearchresultimage from "../../assets/images/nosearchresults.png";
+import BottomNav from "../../components/bottomNav/bottomNav";
+import "./searchpage.css";
 
 const SearchPage = () => {
-    let navigate = useNavigate();
-    const handleGoBack = () => {
-        navigate(-1);
-    }
+  const [searchwords, setSearchWords] = useState("");
+  const [showError, setShowError] = useState(false);
+  let navigate = useNavigate();
+
+  const handleDinput = (e) => {
+    setSearchWords(e.target.value);
+  };
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+
+  const handleDsubmit = (e) => {
+    e.preventDefault();
+    setShowError(true);
+  };
   return (
     <>
-      <HeaderBar handleClick={handleGoBack} backIcon={headerBackIcon} headerText="My Gigs" />
+      <HeaderBar
+        handleClick={handleGoBack}
+        backIcon={headerBackIcon}
+        headerText="My Gigs"
+      />
       <div className="watcham">
         <SearchBar
-            submit="submit"
-            inputType="text"
-            placeholder="Search"
-            inputtFocus={true}
+          submit="submit"
+          inputType="text"
+          placeholder="Search"
+          inputtFocus={true}
+          onSubmit={handleDsubmit}
+          onChange={handleDinput}
         />
+
+        {showError && (
+          <div className="searchpage__notfound">
+            <img src={nosearchresultimage} alt="" />
+            <p className="searchpage_noresultfound">
+              No results found for "{searchwords}"
+            </p>
+            <p className="searchpage__tryagain">
+              Try again using a different keyword
+            </p>
+            <button
+              className="searchpage__gobackbutton"
+              onClick={() => handleGoBack()}
+            >
+              Go Back
+            </button>
+          </div>
+        )}
       </div>
+      <BottomNav
+        gigsIcon={gigIconActive}
+        gigsText={gigTextActive}
+        discoverIcon={disCoverNotActive}
+        discoverText={discoverTextNotActive}
+        messageIcon={messageNotActive}
+        messageText={messagesTextNotActive}
+        settingsIcon={settingsNotActive}
+        settingsText={SettingsTextNotActive}
+      />
     </>
   );
 };
