@@ -14,6 +14,7 @@
 }
 
 .searchpage_noresultfound {
+    margin-top: 1rem;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
