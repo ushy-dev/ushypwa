@@ -30,6 +30,7 @@ const SearchPage = () => {
 
   const handleDinput = (e) => {
     setSearchWords(e.target.value);
+    setShowError(true);
   };
 
   const handleGoBack = () => {
