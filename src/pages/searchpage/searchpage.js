@@ -67,12 +67,6 @@ const SearchPage = () => {
             <p className="searchpage__tryagain">
               Try again using a different keyword
             </p>
-            <button
-              className="searchpage__gobackbutton"
-              onClick={() => handleGoBack()}
-            >
-              Go Back
-            </button>
           </div>
         )}
       </div>
