@@ -1,9 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
+import frameimage from "../../assets/images/frame.png";
 import {
   arrowdownbutton,
+  arrowrightbutton,
   disCoverNotActive,
   discoverTextNotActive,
   gigIconActive,
@@ -19,6 +21,9 @@ import "./gigsDetails.css";
 
 const GigsDetails = () => {
   let navigate = useNavigate();
+  const { state } = useLocation();
+  const { gigType, gigLocation, gigNotification, gigTitle } = state;
+
   const goBack = () => {
     navigate(-1);
   };
@@ -31,10 +36,14 @@ const GigsDetails = () => {
       />
       <div className="gigs_details_cnt">
         <div className="gigs_details_cnt-residency">
-          <p>For Lagos residents only</p>
+          <p>{gigNotification}</p>
         </div>
         <div className="gigs_details_cnt-title">
-          <p>AWA-001-030622</p>
+          <div className="gigs_dimage">
+            <img src={frameimage} alt="" />
+          </div>
+
+          <p>{gigTitle}</p>
           <div>{moreIcon}</div>
         </div>
         <div className="gigs_details_cnt-overview">
@@ -47,88 +56,91 @@ const GigsDetails = () => {
               <p>You will be paid</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p>₦15,000.00</p>
+              <p className="gigs_details_price">₦15,000.00</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Status</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <div className="gigs_details_status">
+                <div className="gigs_details_circle" />
+                <p>Open</p>
+              </div>
+
+              <p className="gigs_details-doesmean">What does this mean?</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Agency</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>Zapphaire Ushers</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Gig Type</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>{gigType}</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Location</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>{gigLocation}</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Gig Length</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>1 Day</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Date(s)</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>03 July 2022</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Time</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>11:00AM - 9:00PM</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Overnight</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p>No</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p>Deadline</p>
             </div>
             <div className="gigs_details_cnt-itemright">
-              <p></p>
+              <p className="gigs_dateleft">2 Days Left</p>
             </div>
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
-              <p></p>
+              <p className="gigs_details-requirement">Requirements</p>
             </div>
-            <div className="gigs_details_cnt-itemright">
-              <p></p>
-            </div>
+            <div className="gigs_details_cnt-itemright">{arrowrightbutton}</div>
           </div>
         </div>
       </div>
@@ -147,3 +159,4 @@ const GigsDetails = () => {
 };
 
 export default GigsDetails;
+ 

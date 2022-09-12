@@ -14,6 +14,7 @@ const JobCard = ({
   bottomTextColor,
   bottomTextThemeColor,
   imagewidth,
+  handleClick
 }) => {
   useEffect(() => {
     document.documentElement.style.setProperty("--productvalue", progresss);
@@ -21,7 +22,7 @@ const JobCard = ({
 
   return (
     <>
-      <div className="jobcard__container">
+      <div className="jobcard__container" onClick={handleClick}>
         <div className="jobcard__top">
           <div className="jobcard__left">
             <p className="jobcard__category">{category}</p>

@@ -63,6 +63,16 @@ function Homepage() {
         <Ads />
         <TitleCard name="Today" />
         <JobCard
+          handleClick={() =>
+            navigate("/gigs-details", {
+              state: {
+                gigType: "Concert",
+                gigLocation: "Victoria Island, Lagos",
+                gigTitle: "Burna Boy: Live @ the O2",
+                gigNotification: "Anyone can apply",
+              },
+            })
+          }
           category="Concert"
           title="Burna Boy: Live @ the O2"
           location="Victoria Island, Lagos"
@@ -76,6 +86,16 @@ function Homepage() {
         />
         <TitleCard name="Tomorrow" />
         <JobCard
+          handleClick={() =>
+            navigate("/gigs-details", {
+              state: {
+                gigType: "Wedding",
+                gigLocation: "Ago-Iwoye, Ogun",
+                gigTitle: "WE01030722",
+                gigNotification: "Must be 5'11 and above",
+              },
+            })
+          }
           category="Wedding"
           title="WE01030722"
           location="Ago-Iwoye, Ogun"
@@ -90,6 +110,17 @@ function Homepage() {
         />
         <TitleCard name="Next Week" />
         <JobCard
+          handleClick={() =>
+            navigate("/gigs-details", {
+              state: {
+                gigType: "Awards & Ceremonies",
+                gigLocation: "Ikorodu, Lagos",
+                gigTitle: "AC03110722",
+                gigNotification:
+                  "Size 8-10. Do not apply if you've worked with an agency in Lagos",
+              },
+            })
+          }
           category="Awards & Ceremonies"
           title="AC03110722"
           location="Ikorodu, Lagos"
@@ -103,6 +134,16 @@ function Homepage() {
           imagewidth="70px"
         />
         <JobCard
+          handleClick={() =>
+            navigate("/gigs-details", {
+              state: {
+                gigType: "Wedding",
+                gigLocation: "Lekki-Epe, Lagos",
+                gigTitle: "#FinallyFeyMos",
+                gigNotification: "Lagos Residents only",
+              },
+            })
+          }
           category="Wedding"
           title="#FinallyFeyMos"
           location="Lekki-Epe, Lagos"
