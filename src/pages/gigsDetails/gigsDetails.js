@@ -138,6 +138,14 @@ const GigsDetails = () => {
           </div>
           <div className="gigs_details_cnt-item">
             <div className="gigs_details_cnt-itemleft">
+              <p>SlotsLeft</p>
+            </div>
+            <div className="gigs_details_cnt-itemright">
+              <p className="gigs_dateleft">2</p>
+            </div>
+          </div>
+          <div className="gigs_details_cnt-item">
+            <div className="gigs_details_cnt-itemleft">
               <p className="gigs_details-requirement">Requirements</p>
             </div>
             <div className="gigs_details_cnt-itemright">{arrowrightbutton}</div>
