@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import BottomNav from "../../components/bottomNav/bottomNav";
 import HeaderBar from "../../components/headerBar/headerBar";
@@ -23,6 +23,10 @@ const GigsDetails = () => {
   let navigate = useNavigate();
   const { state } = useLocation();
   const { gigType, gigLocation, gigNotification, gigTitle } = state;
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const goBack = () => {
     navigate(-1);
