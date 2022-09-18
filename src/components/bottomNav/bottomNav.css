@@ -14,9 +14,9 @@
   padding-bottom: 1.5rem;
   max-width: 428px;
   margin: 0 auto;
-  border-left: 7px solid #9A9FBF25;
-  border-right: 7px solid #9A9FBF25;
-  border-bottom: 7px solid #9A9FBF25;
+  border-left: 1px solid #9A9FBF15;
+  border-right: 1px solid #9A9FBF15;
+  border-bottom: 1px solid #9A9FBF15;
 }
 
 .bottomnav__cnt-item {
