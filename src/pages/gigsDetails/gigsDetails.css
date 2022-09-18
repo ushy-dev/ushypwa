@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 7px 0;
+  padding: 12px 0;
 }
 
 .gigs_details_cnt-residency p {
@@ -19,10 +19,12 @@
   font-weight: 600;
   line-height: 18px;
   text-align: center;
+  letter-spacing: -0.025em;
 }
 
 .gigs_details_cnt-title {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
@@ -32,10 +34,11 @@
 }
 
 .gigs_details_cnt-title img {
+  position: absolute;
   width: 109.49px;
   height: 110.65px;
   object-fit: contain;
-  margin-left: -5rem;
+  top: -14px;
 }
 
 .gigs_details_cnt-title p {
@@ -43,6 +46,7 @@
   font-weight: 700;
   color: #0184fb;
   letter-spacing: -0.03em;
+  text-align: center;
 }
 
 .gigs_details_cnt-overview {
