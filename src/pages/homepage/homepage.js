@@ -140,17 +140,17 @@ function Homepage() {
               state: {
                 gigType: "Wedding",
                 gigLocation: "Lekki-Epe, Lagos",
-                gigTitle: "#FinallyFeyMos",
-                gigNotification: "Lagos Residents only",
+                gigTitle: "#FinallyFeyMos2027",
+                gigNotification: "Lagos residents only",
               },
             })
           }
           category="Wedding"
-          title="#FinallyFeyMos"
+          title="#FinallyFeyMos2027"
           location="Lekki-Epe, Lagos"
           date="06:00AM"
           progresss={25}
-          bottomText="Lagos Residents only"
+          bottomText="Lagos residents only"
           bottomTextThemeColor="#9B51E011"
           bottomTextColor="
         #9B51E0"
