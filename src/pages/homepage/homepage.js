@@ -91,13 +91,13 @@ function Homepage() {
               state: {
                 gigType: "Wedding",
                 gigLocation: "Ago-Iwoye, Ogun",
-                gigTitle: "My Name is Mosope Coker & I am a Product Designer",
+                gigTitle: "WE01030722",
                 gigNotification: "Must be 5'11 and above",
               },
             })
           }
           category="Wedding"
-          title="My Name is Mosope Coker & I am a Product Designer"
+          title="WE01030722"
           location="Ago-Iwoye, Ogun"
           date="4:00PM"
           progresss={25}
