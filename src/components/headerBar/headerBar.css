@@ -9,6 +9,11 @@
   justify-content: space-between;
   padding: 0 16px;
   height: 71px;
+  max-width: 428px;
+  margin: 0 auto;
+  border-top: 7px solid #9A9FBF25;
+  border-left: 7px solid #9A9FBF25;
+  border-right: 7px solid #9A9FBF25;
   border-bottom: 1px solid rgba(154, 159, 191, 0.1);
 }
 
@@ -30,4 +35,22 @@
 
 .backIconButton:active {
     opacity: 0.25;
+}
+
+
+@media screen and (max-width: 500px) {
+  .headerbar-cnt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 71px;
+    max-width: 100%;
+    border: none;
+  }
 }

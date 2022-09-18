@@ -21,8 +21,8 @@ body {
   position: relative;
   max-width: 428px;
   margin: 0 auto;
-  border: 2px solid #111;
-  border-radius: 20px;
+  border-top: none;
+  border: 7px solid #9a9fbf25;
 }
 
 code {
@@ -131,3 +131,11 @@ select {
   font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-radius: none;
+  }
+}
