@@ -43,13 +43,15 @@ const GigsDetails = () => {
           <p>{gigNotification}</p>
         </div>
         <div className="gigs_details_cnt-title">
-          <div className="gigs__details-morenone">{moreIcon}</div>
           <div className="gigs_dimage">
             <img src={frameimage} alt="" />
           </div>
+          <div className="gigs_details_correct">
+            <div className="gigs__details-morenone">{moreIcon}</div>
 
-          <p>{gigTitle}</p>
-          <div className="gigs__details-more">{moreIcon}</div>
+            <p>{gigTitle}</p>
+            <div className="gigs__details-more">{moreIcon}</div>
+          </div>
         </div>
         <div className="gigs_details_cnt-overview">
           <p>Overview</p>

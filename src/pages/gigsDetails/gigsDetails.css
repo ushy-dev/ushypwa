@@ -25,12 +25,21 @@
 .gigs_details_cnt-title {
   display: flex;
   position: relative;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   padding: 0 0px;
   height: 71px;
   background-color: #e6f3ff;
+}
+
+.gigs_details_correct{
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 .gigs_dimage {
