@@ -25,8 +25,8 @@ const GigsDetails = () => {
   const { gigType, gigLocation, gigNotification, gigTitle } = state;
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   const goBack = () => {
     navigate(-1);
@@ -43,12 +43,13 @@ const GigsDetails = () => {
           <p>{gigNotification}</p>
         </div>
         <div className="gigs_details_cnt-title">
+          <div className="gigs__details-morenone">{moreIcon}</div>
           <div className="gigs_dimage">
             <img src={frameimage} alt="" />
           </div>
 
           <p>{gigTitle}</p>
-          <div>{moreIcon}</div>
+          <div className="gigs__details-more">{moreIcon}</div>
         </div>
         <div className="gigs_details_cnt-overview">
           <p>Overview</p>
@@ -171,4 +172,3 @@ const GigsDetails = () => {
 };
 
 export default GigsDetails;
- 

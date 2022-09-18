@@ -25,16 +25,25 @@
 .gigs_details_cnt-title {
   display: flex;
   position: relative;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   overflow: hidden;
-  padding: 0 16px;
+  padding: 0 0px;
   height: 71px;
   background-color: #e6f3ff;
 }
 
-.gigs_details_cnt-title img {
+.gigs_dimage {
   position: absolute;
+  left: 0;
+}
+
+.gigs__details-morenone {
+  opacity: 0;
+  padding-left: 16px;
+}
+
+.gigs_details_cnt-title img {
   width: 109.49px;
   height: 110.65px;
   object-fit: contain;
@@ -47,6 +56,10 @@
   color: #0184fb;
   letter-spacing: -0.03em;
   text-align: center;
+}
+
+.gigs__details-more {
+  padding-right: 16px;
 }
 
 .gigs_details_cnt-overview {
