@@ -76,6 +76,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.8rem 16px;
+  cursor: pointer;
 }
 
 .gigs_details_cnt-overview p {
@@ -86,6 +87,7 @@
 }
 
 .gigs_details_cnt-itembody {
+  background: rgba(154, 159, 191, 0.05);
   padding: 0 16px;
 }
 
@@ -114,6 +116,13 @@
   align-items: flex-end;
 }
 
+.gigs_details_activitesleft {
+  align-items: flex-start !important;
+}
+
+.gigs_details_activities {
+  gap: .5rem;
+}
 .gigs_details_price {
   color: #000000;
   font-weight: 700 !important;
@@ -149,4 +158,9 @@
   font-size: 14px !important;
   color: #000000 !important;
   line-height: 18px !important;
+}
+
+
+.gigs_details_cntlast {
+  border-bottom: none;
 }

@@ -70,6 +70,8 @@ function Homepage() {
                 gigLocation: "Victoria Island, Lagos",
                 gigTitle: "Burna Boy: Live @ the O2",
                 gigNotification: "Anyone can apply",
+                gigTextBackground: "#27AE5F13",
+                gigTextColor: "#27AE60"
               },
             })
           }
@@ -93,6 +95,8 @@ function Homepage() {
                 gigLocation: "Ago-Iwoye, Ogun",
                 gigTitle: "WE01030722",
                 gigNotification: "Must be 5'11 and above",
+                gigTextBackground: "#9B51E011",
+                gigTextColor: "#9B51E0"
               },
             })
           }
@@ -110,7 +114,7 @@ function Homepage() {
         />
         {/* WE01030722 */}
         <TitleCard name="Next Week" />
-        <JobCard
+        <JobCard  
           handleClick={() =>
             navigate("/gigs-details", {
               state: {
@@ -119,9 +123,11 @@ function Homepage() {
                 gigTitle: "AC03110722",
                 gigNotification:
                   "Size 8-10. Do not apply if you've worked with an agency in Lagos",
+                  gigTextBackground: "#9B51E011",
+                  gigTextColor: "#9B51E0"
               },
             })
-          }
+          }         
           category="Awards & Ceremonies"
           title="AC03110722"
           location="Ikorodu, Lagos"
@@ -142,6 +148,8 @@ function Homepage() {
                 gigLocation: "Lekki-Epe, Lagos",
                 gigTitle: "#FinallyFeyMos2027",
                 gigNotification: "Lagos residents only",
+                gigTextBackground: "#9B51E011",
+                gigTextColor: "#9B51E0"
               },
             })
           }
