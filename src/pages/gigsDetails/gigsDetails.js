@@ -272,7 +272,7 @@ const GigsDetails = () => {
               <div className="gigs_details_cnt-itemleft">
                 <p>Outfit</p>
               </div>
-              <div className="gigs_details_cnt-itemright">
+              <div className="gigs_details_cnt-itemright   gigs_details_activities">
                 <p>FittedBlack T-Shirt, Fitted Blue Jeans</p>
                 <p>White Shoes</p>
                 <p style={{color: `${gigTextColor}`}}>Provided by you</p>
