@@ -75,12 +75,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 16px;
+  padding: 20px 16px;
   cursor: pointer;
+  border-bottom: 1px solid #9a9fbf25;
 }
 
+.gigs_details_cnt-overview div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .gigs_details_cnt-overview p {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.03em;
