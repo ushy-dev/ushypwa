@@ -15,7 +15,7 @@
 
 .gigs_details_cnt-residency p {
   color: #9b51e0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 18px;
   text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .gigs_details_cnt-title p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #0184fb;
   letter-spacing: -0.03em;
@@ -88,7 +88,7 @@
 }
 .gigs_details_cnt-overview p {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   letter-spacing: -0.03em;
 }
@@ -103,11 +103,11 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(154, 159, 191, 0.1);
-  padding: 20px 0px;
+  padding: 24px 0px;
 }
 
 .gigs_details_cnt-item p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 15px;
   letter-spacing: -0.03em;
@@ -137,7 +137,7 @@
 .gigs_details_price {
   color: #000000;
   font-weight: 700 !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 .gigs_details_circle {
