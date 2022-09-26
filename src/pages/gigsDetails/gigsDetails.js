@@ -345,7 +345,7 @@ const GigsDetails = () => {
               <div className="gigs_details_cnt-itemleft ">
                 <p>Activities</p>
               </div>
-              <div className="gigs_details_cnt-itemright gigs_details_activities">
+              <div className="gigs_details_cnt-itemright gigs_details_activitiess">
                 <p className="">Attendance</p>
                 <p>Rule Enforcement</p>
                 <p>Guest Relations</p>
@@ -357,7 +357,7 @@ const GigsDetails = () => {
               <div className="gigs_details_cnt-itemleft">
                 <p>Perks</p>
               </div>
-              <div className="gigs_details_cnt-itemright  gigs_details_activities">
+              <div className="gigs_details_cnt-itemright  gigs_details_activitiess">
                 <p>Food</p>
                 <p>Transportation</p>
                 <p>Accomodation</p>

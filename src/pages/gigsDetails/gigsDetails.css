@@ -130,6 +130,10 @@
 .gigs_details_activities {
   gap: .5rem;
 }
+
+.gigs_details_activitiess {
+  gap: 1rem;
+}
 .gigs_details_price {
   color: #000000;
   font-weight: 700 !important;
