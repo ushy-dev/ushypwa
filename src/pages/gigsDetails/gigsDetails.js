@@ -361,14 +361,14 @@ const GigsDetails = () => {
                 <p>Food</p>
                 <p>Transportation</p>
                 <p>Accomodation</p>
-                <p>Make UP</p>
+                <p>Make Up</p>
                 <p>Souvenirs</p>
                 <p>Breaks</p>
               </div>
             </div>
             <div className="gigs_details_cnt-item gigs_details_cntlast">
               <div className="gigs_details_cnt-itemleft">
-                <p>Agency</p>
+                <p>Additional Notes</p>
               </div>
               <div className="gigs_details_cnt-itemright">
                 <p>Please be punctual</p>

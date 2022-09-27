@@ -52,6 +52,7 @@
     padding-bottom: 1.5rem;
     max-width: 100%;
     border: none;
+    border-top: 1px solid #9A9FBF15;
   }
 }
 
