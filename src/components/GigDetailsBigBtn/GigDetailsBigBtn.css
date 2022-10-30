@@ -1,0 +1,34 @@
+.gdbbtn {
+  position: fixed;
+  bottom: 6.8rem;
+  left: 0;
+  right: 0;
+  max-width: 428px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 0px 16px;
+}
+
+.gigdetailsbigbtn__cnt {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.03em;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .gdbbtn {
+    position: fixed;
+    bottom: 6.8rem;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

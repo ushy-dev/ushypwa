@@ -1,8 +1,9 @@
 import React from "react";
+import "./GigDetailsBigBtn.css"
 
 function GigDetailsBigBtn({ btnColor, btnName, handleClick }) {
   return (
-    <>
+    <div className="gdbbtn">
       <button
         style={{ backgroundColor: `${btnColor}` }}
         onClick={handleClick}
@@ -10,7 +11,7 @@ function GigDetailsBigBtn({ btnColor, btnName, handleClick }) {
       >
         {btnName}
       </button>
-    </>
+    </div>
   );
 }
 

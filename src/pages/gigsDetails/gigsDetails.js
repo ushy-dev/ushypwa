@@ -18,6 +18,7 @@ import {
   SettingsTextNotActive,
 } from "../../Utils/tools";
 import "./gigsDetails.css";
+import GigDetailsBigBtn from "../../components/GigDetailsBigBtn/GigDetailsBigBtn";
 
 const GigsDetails = () => {
   const [overviewCnt, setOverviewCnt] = useState("active");
@@ -376,7 +377,10 @@ const GigsDetails = () => {
             </div>
           </div>
         )}
+
+        <GigDetailsBigBtn btnColor="#EB5757" btnName="Back Out"  />
       </div>
+      
       <BottomNav
         gigsIcon={gigIconActive}
         gigsText={gigTextActive}
