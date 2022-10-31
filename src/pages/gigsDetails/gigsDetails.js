@@ -19,11 +19,13 @@ import {
 } from "../../Utils/tools";
 import "./gigsDetails.css";
 import GigDetailsBigBtn from "../../components/GigDetailsBigBtn/GigDetailsBigBtn";
+import Dialogmodal from "../../components/dialogmodal/dialogmodal";
 
 const GigsDetails = () => {
   const [overviewCnt, setOverviewCnt] = useState("active");
   const [requirementsCnt, setRequirementCnt] = useState("not-active");
   const [moreInfoCnt, setMoreInfoCnt] = useState("not-active");
+  const [backoutDialog, setBackoutDialog] = useState(false);
   let navigate = useNavigate();
   const { state } = useLocation();
   const {
@@ -60,6 +62,10 @@ const GigsDetails = () => {
   const goBack = () => {
     navigate(-1);
   };
+
+  const closeDialog = () => {
+    setBackoutDialog(false);
+  }
   return (
     <>
       <HeaderBar
@@ -234,7 +240,7 @@ const GigsDetails = () => {
                 <p>Gender</p>
               </div>
               <div className="gigs_details_cnt-itemright">
-               <p>Female</p>
+                <p>Female</p>
               </div>
             </div>
             <div className="gigs_details_cnt-item">
@@ -276,7 +282,7 @@ const GigsDetails = () => {
               <div className="gigs_details_cnt-itemright   gigs_details_activities">
                 <p>FittedBlack T-Shirt, Fitted Blue Jeans</p>
                 <p>White Shoes</p>
-                <p style={{color: `${gigTextColor}`}}>Provided by you</p>
+                <p style={{ color: `${gigTextColor}` }}>Provided by you</p>
               </div>
             </div>
             <div className="gigs_details_cnt-item">
@@ -378,9 +384,20 @@ const GigsDetails = () => {
           </div>
         )}
 
-        <GigDetailsBigBtn btnColor="#EB5757" btnName="Back Out"  />
+        <GigDetailsBigBtn
+          btnColor="#EB5757"
+          btnName="Back Out"
+          handleClick={() => setBackoutDialog(true)}
+
+        />
+        {backoutDialog === true ? (
+          <Dialogmodal writeUp="Are you sure you want to back out of this gig?" 
+          handleNo={closeDialog} />
+        ) : (
+          <></>
+        )}
       </div>
-      
+
       <BottomNav
         gigsIcon={gigIconActive}
         gigsText={gigTextActive}
