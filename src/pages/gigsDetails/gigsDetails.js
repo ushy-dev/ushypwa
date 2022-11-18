@@ -396,6 +396,8 @@ const GigsDetails = () => {
         ) : (
           <></>
         )}
+
+        
       </div>
 
       <BottomNav
