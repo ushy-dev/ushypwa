@@ -8,7 +8,6 @@
   max-width: 428px;
   margin: 0 auto;
   z-index: 10001;
-
 }
 
 .dialogmodal__wrapper {
@@ -16,6 +15,10 @@
   bottom: 5.5rem;
   width: 428px;
   z-index: 10002;
+  -webkit-animation-name: bottomnavslideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: bottomnavslideIn;
+  animation-duration: 0.4s;
 }
 
 .dailogmodal {
@@ -63,7 +66,7 @@
 
 .dialogmodal__no {
   background-color: #fff;
-  border: 1px solid rgba(154, 159, 191,0.25);
+  border: 1px solid rgba(154, 159, 191, 0.25);
   color: #000000;
 }
 
@@ -71,6 +74,27 @@
   background-color: #0184fb;
   border: 1px solid #0184fb;
   color: #fff;
+}
+@-webkit-keyframes bottomnavslideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes bottomnavslideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 500px) {
